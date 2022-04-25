@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiSto</title>
+    <!-- Bootstrap Begins -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+    <!-- Bootstrap Ends -->
+    <!-- Fonts & Icons Begin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts & Icons Ends -->
+
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- Slider Ends -->
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="upper-nav nav top-nav">
+        <div class="leftside-uppernav">
+          <span class="leftside-uppernav-content">
+            <img
+              src="images/phone.jpg"
+              alt="phone-icon"
+              class="upper-nav-icon"
+            />
+            <p class="uppernav-text">+38(050)12 34 567</p>
+          </span>
+          <span class="leftside-uppernav-content">
+            <img
+              src="images/location-marker 2.png"
+              alt="location-icon"
+              class="upper-nav-icon"
+            />
+            <p class="uppernav-text">Ukraine, Kyiv,Khreshchatyk 1</p>
+          </span>
+          <span class="leftside-uppernav-content">
+            <img
+              src="images/timer.png"
+              alt="clock-icon"
+              class="upper-nav-icon"
+            />
+            <p class="uppernav-text">All week 24/7</p>
+          </span>
+        </div>
+        <div class="rightside-uppernav">
+          <ul>
+            <li>
+              <a href="">
+                <img
+                  src="images/facebook.png"
+                  alt="facebook-icon"
+                  class="upper-nav-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="images/twitter.png"
+                  alt="twitter-icon"
+                  class="upper-nav-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="images/instagram.png"
+                  alt="instagram-icon"
+                  class="upper-nav-icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="images/pinterest.png"
+                  alt="pinterest-icon"
+                  class="upper-nav-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="primary-nav nav">
+        <div class="logo-text"><h3>MiSto</h3></div>
+        <div class="middle-nav">
+          <ul class="menu-items">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Beauty</a></li>
+            <li><a href="">Accessories</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <ul class="primary-nav-icons leftside-uppernav-content">
+          <li>
+            <a href=""><i class="fas fa-search"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-globe"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-user"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-shopping-bag"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-nav tab-view">
+        <div class="logo-text-mobile"><h3>MiSto</h3></div>
+        <ul class="leftside-uppernav-content tablet-icon">
+          <li>
+            <a href=""><i class="fas fa-search"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-globe"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-user"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-shopping-bag"></i></a>
+          </li>
+        </ul>
+
+        <a href=""><i class="fas fa-search icon"></i></a>
+        <a href=""><i class="fas fa-user icon"></i></a>
+        <a href=""><i class="fas fa-shopping-bag icon"></i></a>
+
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/">About Us</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- main begins -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-container">
+          <div class="leftside-hero">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="images/banner.jpg" alt="" class="banner" />
+                  <div class="hero-text">
+                    <p>Shop Now</p>
+                    <h3>UP TO 50% OFF</h3>
+                    <p>On Urban Wears</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/fragrances.jpg" alt="" class="banner" />
+                  <div class="hero-text">
+                    <p>Shop Now</p>
+                    <h3>UP TO 72% OFF</h3>
+                    <p>On Fragrances</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/wristwatch.jpg" alt="" class="banner" />
+                  <div class="hero-text">
+                    <p>Shop Now</p>
+                    <h3>UP TO 60% OFF</h3>
+                    <p>On Wristwatches</p>
+                  </div>
+                </div>
+                <!-- ... -->
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="rightside-hero">
+            <div class="top-section">
+              <div class="women one">
+                <img src="images/women.jpg" alt="" class="right-hero-image" />
+                <div class="categories-text">
+                  <h4>WOMEN</h4>
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="men one">
+                <img src="images/men.jpg" alt="" class="right-hero-image" />
+                <div class="categories-text">
+                  <h4>MEN</h4>
+                </div>
+                <div class="overlay"></div>
+              </div>
+            </div>
+            <div class="accessories one">
+              <img
+                src="images/accessories.jpg"
+                alt=""
+                class="right-hero-image"
+              />
+              <div class="categories-text">
+                <h4>ACCESSORIES</h4>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Ends -->
+      <!-- Benefits Begin -->
+      <section class="benefits-packages white-section">
+        <div class="benefits">
+          <div class="benefits-content">
+            <i class="fas fa-shipping-fast"></i>
+            <div class="benefits-content-text">
+              <h4>FREE SHIPPING</h4>
+              <p>On all UA order or order above $100</p>
+            </div>
+          </div>
+          <div class="benefits-content">
+            <i class="fas fa-sync-alt"></i>
+            <div class="benefits-content-text">
+              <h4>30 DAYS RETURN</h4>
+              <p>Simply return it within 30 days for an exchange</p>
+            </div>
+          </div>
+          <div class="benefits-content">
+            <i class="fas fa-headset"></i>
+            <div class="benefits-content-text">
+              <h4>SUPPORT 24/7</h4>
+              <p>Contact us 24 hours a day, 7 days a week</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Benefits Ends -->
+      <!-- Women Category Begins -->
+      <section class="women-categories container">
+        <div class="women-categories-nav">
+          <div class="brand-text">
+            <h2>WOMEN'S</h2>
+          </div>
+          <ul class="women-categories-nav-menu-items">
+            <li><a href="">NEW ARRIVALS</a></li>
+            <li><a href="">SPECIALS</a></li>
+            <li><a href="">BEST SELLERS</a></li>
+            <li><a href="">MOST VIEWED</a></li>
+            <li><a href="">FEATURED PRODUCTS</a></li>
+          </ul>
+        </div>
+        <div class="products">
+          <div class="products-wrapper">
+            <div class="product-overlay">
+              <img src="images/women1.jpg" alt="" class="product-image" />
+              <div class="overlay1">
+                <a href=""><i class="fas fa-heart text"></i></a>
+                <a href="" class="text2">ADD to CART</a>
+              </div>
+            </div>
+
+            <p class="product-title">Women's tracksuit Q109</p>
+            <div class="product-text">
+              <h4>$3 8.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/women2.jpg" alt="" class="product-image" />
+            <p class="product-title">Cluse La Boheme Rose Gold</p>
+            <div class="product-text">
+              <h4>$ 30.00</h4>
+              <p class="bonus-text">$ 60.00</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="bonus"><p>-50%</p></div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/women3.jpg" alt="" class="product-image" />
+            <p class="product-title">Mercury Tee</p>
+            <div class="product-text">
+              <h4>$ 54.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/women4.jpg" alt="" class="product-image" />
+            <p class="product-title">Skin Sweatpants</p>
+            <div class="product-text">
+              <h4>$ 21.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/women5.jpg" alt="" class="product-image" />
+            <p class="product-title">Short Sleeved Hoodie</p>
+            <div class="product-text">
+              <h4>$ 32.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/women6.jpg" alt="" class="product-image" />
+            <p class="product-title">Ridley High Waist</p>
+            <div class="product-text">
+              <h4>$ 68.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/women7.jpg" alt="" class="product-image" />
+            <p class="product-title">Cream women pants</p>
+            <div class="product-text">
+              <h4>$ 45.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/women8.jpg" alt="" class="product-image" />
+            <p class="product-title">Simple Skin T-shirt</p>
+            <div class="product-text">
+              <h4>$20.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/women3.jpg" alt="" class="product-image" />
+            <p class="product-title">Mercury Tee</p>
+            <div class="product-text">
+              <h4>$54.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/women4.jpg" alt="" class="product-image" />
+            <p class="product-title">Skin Sweatpants</p>
+            <div class="product-text">
+              <h4>$21.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="see-all">SEE ALL</button>
+      </section>
+      <!-- Women Category Section Ends-->
+      <!-- Men Category Begins -->
+      <section class="women-categories container">
+        <div class="women-categories-nav">
+          <div class="brand-text">
+            <h2>MEN'S</h2>
+          </div>
+          <ul class="women-categories-nav-menu-items">
+            <li><a href="">NEW ARRIVALS</a></li>
+            <li><a href="">SPECIALS</a></li>
+            <li><a href="">BEST SELLERS</a></li>
+            <li><a href="">MOST VIEWED</a></li>
+            <li><a href="">FEATURED PRODUCTS</a></li>
+          </ul>
+        </div>
+        <div class="products">
+          <div class="products-wrapper">
+            <img src="images/men1.jpg" alt="" class="product-image" />
+            <p class="product-title">Stripped Sweatshirt</p>
+            <div class="product-text">
+              <h4>$38.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/men2.jpg" alt="" class="product-image" />
+            <p class="product-title">Men pants</p>
+            <div class="product-text">
+              <h4>$ 30.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/men3.jpg" alt="" class="product-image" />
+            <p class="product-title">Men Knit Sweater</p>
+            <div class="product-text">
+              <h4>$ 54.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/men4.jpg" alt="" class="product-image" />
+            <p class="product-title">Dusk Pom Beanie</p>
+            <div class="product-text">
+              <h4>$ 180.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/men5.jpg" alt="" class="product-image" />
+            <p class="product-title">Denim Trucker Jacket</p>
+            <div class="product-text">
+              <h4>$ 32.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/men6.jpg" alt="" class="product-image" />
+            <p class="product-title">Denim Vest</p>
+            <div class="product-text">
+              <h4>$ 320.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/men7.jpg" alt="" class="product-image" />
+            <p class="product-title">Leather White Trainers</p>
+            <div class="product-text">
+              <h4>$ 54.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/men8.jpg" alt="" class="product-image" />
+            <p class="product-title">Checked Tailored Trousers</p>
+            <div class="product-text">
+              <h4>$ 280.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/men3.jpg" alt="" class="product-image" />
+            <p class="product-title">Men Knit Sweater</p>
+            <div class="product-text">
+              <h4>$54.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-wrapper">
+            <img src="images/men2.jpg" alt="" class="product-image" />
+            <p class="product-title">Men Pants</p>
+            <div class="product-text">
+              <h4>$ 20.00</h4>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="see-all">SEE ALL</button>
+      </section>
+      <!-- MEN CATEGORY ENDS -->
+      <!-- EXCLUSIVE SALES BEGINS -->
+      <section class="exclusive-sales">
+        <div class="left-exclusive exclusive">
+          <img src="images/lookbook.jpg" alt="" class="exclusive-image" />
+          <div class="exclusive-text">
+            <p class="exclusive-title">NEW SEASON</p>
+            <h4>LOOKBOOK COLLECTION</h4>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="right-exclusive exclusive">
+          <img src="images/sale.jpg" alt="" class="exclusive-image" />
+          <div class="exclusive-text">
+            <p class="exclusive-title">SALE</p>
+            <h4>GET UP TO <span class="off">50% OFF</span></h4>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </section>
+      <!-- EXCLUSIVE SALES ENDS -->
+      <section class="special-offer">
+        <img src="images/Daco_6068770 1.png" alt="" class="sub-lady" />
+        <div class="subscribe-container">
+          <p>SPECIAL OFFER</p>
+          <h2>
+            SUBSCRIBE <br />
+            AND <span class="off">GET 10% OFF</span>
+          </h2>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <button class="subscribe-btn jello-vertical">SUBSCRIBE</button>
+        </div>
+        <img src="images/suit_man.png" alt="" class="sub-man" />
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
