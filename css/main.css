@@ -44,7 +44,7 @@ section {
   width: 100%;
 }
 main {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .nav {
   padding: 0 85px;
@@ -202,19 +202,18 @@ main {
 
 .hero-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   height: 100vh;
+  width: 100%;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .swiper {
   width: 100%;
-  max-width: 700px;
-  height: calc(100vh - 150px);
+  max-width: 50rem;
 }
 
-.leftside-hero {
-  flex-basis: 47%;
-}
 .banner {
   width: 100%;
 }
@@ -256,15 +255,13 @@ main {
 .rightside-hero {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 50px);
-  gap: 30px;
-  width: 70%;
-  flex-basis: 47%;
+  gap: 10px;
   cursor: pointer;
   overflow: hidden;
 }
 .top-section {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
 }
 .one {
@@ -273,19 +270,21 @@ main {
   position: relative;
 }
 .top-section img {
-  width: 310px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .right-hero-image {
-  height: 299px;
+  height: 356px;
   width: 100%;
   margin-left: 10px;
+  overflow: hidden;
 }
 
-.women,
-.men,
-.accessories {
+
+.one {
   position: relative;
+  overflow: hidden;
 }
 .categories-text {
   position: absolute;
@@ -310,13 +309,16 @@ main {
   top: 0;
   left: 0;
   z-index: 1;
+  /* overflow: hidden; */
 }
 .one:hover .right-hero-image {
-  transform: scaleX(1.2);
+  transform: scale(1.1);
   transition: all 0.4s ease-in-out;
+  overflow: hidden;
 }
 .one:hover .overlay {
   opacity: 0.4;
+  overflow: hidden;
 }
 .one:hover .categories-text {
   width: 200px;
@@ -377,7 +379,7 @@ main {
   position: relative;
 }
 .products-wrapper:hover .product-image {
-  transform: scaleX(1.2);
+  transform: scale(1.2);
   transition: all 0.4s ease-in-out;
 }
 .product-text {
@@ -397,6 +399,8 @@ main {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   display: block;
+  overflow: hidden;
+  height: fit-content;
 }
 .overlay1 {
   background: var(--color-1);
