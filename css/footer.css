@@ -1,0 +1,113 @@
+.top-footer .rightside-uppernav ul {
+  display: flex;
+}
+.top-footer {
+  background-color: var(--color-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 85px;
+}
+.top-footer p {
+  color: var(--color-2);
+  font-size: 14px;
+}
+.stay-in-touch {
+  display: flex;
+  /* align-items: center; */
+}
+.footer-input {
+  background: var(--color-3);
+  opacity: 0.7;
+  width: 400px;
+  border: none;
+  outline: none;
+  outline: none;
+  padding: 15px;
+  caret-color: var(--color-3);
+}
+.footer-input:focus {
+  opacity: 1;
+  caret-color: #121212;
+}
+.footer-input::placeholder {
+  padding-left: 8px;
+  text-align: left;
+}
+.stay-in-touch-cta {
+  margin-left: 12px;
+  width: 109px;
+  background: none;
+  border: 1px solid var(--color-3);
+  color: #ccc;
+  cursor: pointer;
+}
+.stay-in-touch-cta:hover {
+  background-color: var(--color-3);
+  color: #121212;
+}
+.footer-nav-icon {
+  padding-left: 10px;
+  transition: 0.2s;
+}
+.footer-nav-icon:hover {
+  color: var(--icon-hover);
+  transform: scale(1.2);
+}
+.middle-footer-content-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.middle-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-2);
+}
+.middle-footer-content ul li a {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 18px;
+}
+.middle-footer-content ul li a:hover {
+  opacity: 1;
+}
+.contact-footer {
+  display: flex;
+  align-items: center;
+}
+.footer-contact li {
+  margin-top: 8px;
+}
+.contact-footer {
+  font-size: 12px;
+  opacity: 0.8;
+  /* */
+}
+.contact-footer-icon {
+  margin-right: 8px;
+}
+.bottom-footer {
+  background: var(--color-3);
+  height: 40px;
+}
+.bottom-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-middle-footer img {
+  padding-right: 12px;
+  cursor: pointer;
+}
+.bottom-right-footer {
+  display: flex;
+  font-size: 14px;
+}
+.bottom-right-footer a {
+  font-weight: bold;
+}
+.bottom-right-footer a:hover {
+  text-decoration: underline;
+}

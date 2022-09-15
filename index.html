@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -36,143 +36,10 @@
     />
     <!-- Slider Ends -->
 
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <header class="header container">
-      <nav class="upper-nav nav top-nav">
-        <div class="leftside-uppernav">
-          <span class="leftside-uppernav-content">
-            <img
-              src="images/phone.jpg"
-              alt="phone-icon"
-              class="upper-nav-icon"
-            />
-            <p class="uppernav-text">+38(050)12 34 567</p>
-          </span>
-          <span class="leftside-uppernav-content">
-            <img
-              src="images/location-marker 2.png"
-              alt="location-icon"
-              class="upper-nav-icon"
-            />
-            <p class="uppernav-text">Ukraine, Kyiv,Khreshchatyk 1</p>
-          </span>
-          <span class="leftside-uppernav-content">
-            <img
-              src="images/timer.png"
-              alt="clock-icon"
-              class="upper-nav-icon"
-            />
-            <p class="uppernav-text">All week 24/7</p>
-          </span>
-        </div>
-        <div class="rightside-uppernav">
-          <ul>
-            <li>
-              <a href="">
-                <img
-                  src="images/facebook.png"
-                  alt="facebook-icon"
-                  class="upper-nav-icon"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="images/twitter.png"
-                  alt="twitter-icon"
-                  class="upper-nav-icon"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="images/instagram.png"
-                  alt="instagram-icon"
-                  class="upper-nav-icon"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="images/pinterest.png"
-                  alt="pinterest-icon"
-                  class="upper-nav-icon"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <nav class="primary-nav nav">
-        <div class="logo-text"><h3>MiSto</h3></div>
-        <div class="middle-nav">
-          <ul class="menu-items">
-            <li><a href="">About Us</a></li>
-            <li><a href="">Women</a></li>
-            <li><a href="">Men</a></li>
-            <li><a href="">Beauty</a></li>
-            <li><a href="">Accessories</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-        <ul class="primary-nav-icons leftside-uppernav-content">
-          <li>
-            <a href=""><i class="fas fa-search"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fas fa-globe"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fas fa-user"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fas fa-shopping-bag"></i></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="mobile-nav tab-view">
-        <div class="logo-text-mobile"><h3>MiSto</h3></div>
-        <ul class="leftside-uppernav-content tablet-icon">
-          <li>
-            <a href=""><i class="fas fa-search"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fas fa-globe"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fas fa-user"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fas fa-shopping-bag"></i></a>
-          </li>
-        </ul>
-
-        <a href=""><i class="fas fa-search icon"></i></a>
-        <a href=""><i class="fas fa-user icon"></i></a>
-        <a href=""><i class="fas fa-shopping-bag icon"></i></a>
-
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <ul class="mobile-menu">
-            <li><a href="/">About Us</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Beauty</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <nav class="header navbar"></nav>
     <!-- main begins -->
     <main>
       <!-- Hero Section -->
@@ -217,31 +84,29 @@
               <div class="swiper-button-next"></div>
             </div>
           </div>
+
+          <!-- Rework the right side hero -->
           <div class="rightside-hero">
-            <div class="top-section">
-              <div class="women one">
-                <img src="images/women.jpg" alt="" class="right-hero-image" />
+            <div class="top-rightside">
+              <a class="collection">
+                <img src="images/women.jpg" alt="" />
                 <div class="categories-text">
                   <h4>WOMEN</h4>
                 </div>
                 <div class="overlay"></div>
-              </div>
-              <div class="men one">
-                <img src="images/men.jpg" alt="" class="right-hero-image" />
+              </a>
+              <a class="collection">
+                <img src="images/men.jpg" alt="" />
                 <div class="categories-text">
                   <h4>MEN</h4>
                 </div>
                 <div class="overlay"></div>
-              </div>
+              </a>
             </div>
-            <div class="accessories one">
-              <img
-                src="images/accessories.jpg"
-                alt=""
-                class="right-hero-image"
-              />
+            <div class="collection accessories-1">
+              <img src="images/accessories.jpg" alt="" class="accessories" />
               <div class="categories-text">
-                <h4>ACCESSORIES</h4>
+                <h4><a href="product.html">ACCESSORIES</a></h4>
               </div>
               <div class="overlay"></div>
             </div>
@@ -294,15 +159,15 @@
           <div class="products-wrapper">
             <div class="product-overlay">
               <img src="images/women1.jpg" alt="" class="product-image" />
-              <div class="overlay1">
-                <a href=""><i class="fas fa-heart text"></i></a>
-                <a href="" class="text2">ADD to CART</a>
-              </div>
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
             </div>
 
-            <p class="product-title">Women's tracksuit Q109</p>
+            <p class="product-title">
+              <a href="product.html">Women's tracksuit Q109</a>
+            </p>
             <div class="product-text">
-              <h4>$3 8.00</h4>
+              <h4>$38.00</h4>
               <div class="rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -313,7 +178,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/women2.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/women2.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Cluse La Boheme Rose Gold</p>
             <div class="product-text">
               <h4>$ 30.00</h4>
@@ -329,7 +198,12 @@
             <div class="bonus"><p>-50%</p></div>
           </div>
           <div class="products-wrapper">
-            <img src="images/women3.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/women3.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
+
             <p class="product-title">Mercury Tee</p>
             <div class="product-text">
               <h4>$ 54.00</h4>
@@ -343,7 +217,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/women4.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/women4.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Skin Sweatpants</p>
             <div class="product-text">
               <h4>$ 21.00</h4>
@@ -357,7 +235,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/women5.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/women5.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Short Sleeved Hoodie</p>
             <div class="product-text">
               <h4>$ 32.00</h4>
@@ -371,7 +253,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/women6.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/women6.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Ridley High Waist</p>
             <div class="product-text">
               <h4>$ 68.00</h4>
@@ -385,7 +271,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/women7.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/women7.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Cream women pants</p>
             <div class="product-text">
               <h4>$ 45.00</h4>
@@ -399,7 +289,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/women8.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/women8.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Simple Skin T-shirt</p>
             <div class="product-text">
               <h4>$20.00</h4>
@@ -413,7 +307,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/women3.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/women3.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Mercury Tee</p>
             <div class="product-text">
               <h4>$54.00</h4>
@@ -427,7 +325,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/women4.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/women4.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Skin Sweatpants</p>
             <div class="product-text">
               <h4>$21.00</h4>
@@ -460,7 +362,11 @@
         </div>
         <div class="products">
           <div class="products-wrapper">
-            <img src="images/men1.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men1.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Stripped Sweatshirt</p>
             <div class="product-text">
               <h4>$38.00</h4>
@@ -474,7 +380,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/men2.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men2.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Men pants</p>
             <div class="product-text">
               <h4>$ 30.00</h4>
@@ -488,7 +398,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/men3.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men3.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Men Knit Sweater</p>
             <div class="product-text">
               <h4>$ 54.00</h4>
@@ -502,7 +416,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/men4.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men4.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Dusk Pom Beanie</p>
             <div class="product-text">
               <h4>$ 180.00</h4>
@@ -516,7 +434,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/men5.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men5.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Denim Trucker Jacket</p>
             <div class="product-text">
               <h4>$ 32.00</h4>
@@ -530,7 +452,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/men6.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men6.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Denim Vest</p>
             <div class="product-text">
               <h4>$ 320.00</h4>
@@ -543,8 +469,13 @@
               </div>
             </div>
           </div>
+
           <div class="products-wrapper">
-            <img src="images/men7.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men7.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Leather White Trainers</p>
             <div class="product-text">
               <h4>$ 54.00</h4>
@@ -558,7 +489,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/men8.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men8.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Checked Tailored Trousers</p>
             <div class="product-text">
               <h4>$ 280.00</h4>
@@ -572,7 +507,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/men3.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men3.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Men Knit Sweater</p>
             <div class="product-text">
               <h4>$54.00</h4>
@@ -586,7 +525,11 @@
             </div>
           </div>
           <div class="products-wrapper">
-            <img src="images/men2.jpg" alt="" class="product-image" />
+            <div class="product-overlay">
+              <img src="images/men2.jpg" alt="" class="product-image" />
+              <button href="" class="card-btn">Add to Cart</button>
+              <div class="overlay1"></div>
+            </div>
             <p class="product-title">Men Pants</p>
             <div class="product-text">
               <h4>$ 20.00</h4>
@@ -623,6 +566,7 @@
         </div>
       </section>
       <!-- EXCLUSIVE SALES ENDS -->
+      <!-- SPECIAL OFFER BEGINS -->
       <section class="special-offer">
         <img src="images/Daco_6068770 1.png" alt="" class="sub-lady" />
         <div class="subscribe-container">
@@ -641,14 +585,64 @@
         </div>
         <img src="images/suit_man.png" alt="" class="sub-man" />
       </section>
+      <!-- SPECIAL OFFER ENDS -->
+      <!-- BLOG SECTION BEGINS -->
+
+      <section class="blog container">
+        <div class="women-categories-nav">
+          <div class="brand-text">
+            <h2>LATEST FROM BLOG</h2>
+          </div>
+          <ul class="women-categories-nav-menu-items">
+            <li><a href="">SEE ALL</a></li>
+          </ul>
+        </div>
+        <div class="article-card">
+          <div class="article-content">
+            <img src="images/blog1.jpg" alt="" />
+            <div class="article-text">
+              <h5>The Easiest Way to Break</h5>
+              <p class="article-paragraph">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleas and praising pain was bor
+              </p>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="images/blog2.jpg" alt="" />
+            <div class="article-text">
+              <h5>Wedding Season</h5>
+              <p class="article-paragraph">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleas and praising pain was bor
+              </p>
+            </div>
+          </div>
+          <div class="article-content">
+            <img src="images/blog3.jpg" alt="" />
+            <div class="article-text">
+              <h5>Recent Favorites On Repeat</h5>
+              <p class="article-paragraph">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleas and praising pain was bor
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BLOG SECTION BEGINS -->
     </main>
+    <!-- FOOTER BEGINS -->
+    <footer class="footer"></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/nav.js"></script>
     <script src="js/slider.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
