@@ -1,0 +1,29 @@
+:root {
+  --color-1: #121212;
+  --color-2: #ffffff;
+  --color-3: #f8f8f8;
+  --icon-hover: #f0cc84;
+  --background-color: #fefefe;
+  --navbar-font-size: 16px;
+}
+main {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.four-0-four-image {
+  margin-bottom: 2.5rem;
+}
+
+.four-0-four-msg {
+  text-align: center;
+  text-transform: capitalize;
+  color: grey;
+}
+
+.four-0-four-msg a {
+  font-weight: 600;
+  text-decoration: underline;
+}

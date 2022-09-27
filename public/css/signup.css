@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-1: #121212;
+  --color-2: #ffffff;
+  --color-3: #f8f8f8;
+  --icon-hover: #f0cc84;
+  --background-color: #fefefe;
+  --navbar-font-size: 16px;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: #f5f5f5;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.25rem;
+  display: none;
+}
+.logo-text-signup {
+  margin: 0 auto 3.125rem;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  display: block;
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  outline: none;
+  margin: 10px 0 20px;
+  text-transform: capitalize;
+  color: #383838;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+  font-family: "Inter", sans-serif;
+}
+
+::placeholder {
+  text-align: left;
+  color: #383838;
+}
+
+.submit-btn {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: var(--color-1);
+  color: var(--color-2);
+  border-radius: 2px;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: block;
+  margin: 30px 0;
+  transition: 0.4s;
+}
+.submit-btn:hover {
+  background: var(--color-3);
+  color: var(--color-1);
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid var(--color-1);
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background: var(--color-1);
+}
+
+.checkbox::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("../images/check.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.checkbox:checked::after {
+  display: block;
+}
+
+label {
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--color-1);
+}
+
+label a {
+  color: var(--color-1);
+}
+
+.link {
+  color: var(--color-1);
+  text-transform: capitalize;
+  /* text-align: center; */
+  display: block;
+}
+.alert-box {
+  width: 300px;
+  min-height: 150px;
+  background: var(--color-2);
+  border-radius: 10px;
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  transition: 1s;
+}
+.show {
+  opacity: 1;
+  pointer-events: all;
+  top: 50%;
+}
+.alert-img {
+  display: block;
+  margin: 10px auto 20px;
+  height: 60px;
+}
+.alert-msg {
+  color: #e24c4b;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+}

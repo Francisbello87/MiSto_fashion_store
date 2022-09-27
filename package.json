@@ -1,0 +1,25 @@
+{
+  "name": "misto_fashion_store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Francisbello87/MiSto_fashion_store.git"
+  },
+  "author": "Francis Bello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Francisbello87/MiSto_fashion_store/issues"
+  },
+  "homepage": "https://github.com/Francisbello87/MiSto_fashion_store#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express.js": "^1.0.0",
+    "firebase-admin": "^11.0.1",
+    "nodemon": "^2.0.20"
+  }
+}

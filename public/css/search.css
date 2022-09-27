@@ -1,0 +1,16 @@
+.search-results {
+  width: 100%;
+  padding: 3.75rem 0;
+}
+
+.heading {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 60px;
+  padding: 0 10vw;
+}
+
+.heading span {
+  font-weight: 700;
+}
