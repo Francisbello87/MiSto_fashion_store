@@ -94,15 +94,19 @@ const createNav = () => {
     />
         <a href=""><i class="fas fa-search desktop-search"></i></a>
       </li>
-      <li>
-        <a href=""><i class="fas fa-globe"></i></a>
-      </li>
+    
       <li class="cart">
         <a href=""><i class="fas fa-shopping-bag"></i></a>
         <p class="cart-count">0</p>
       </li>
-      <li>
-      <a href=""><i class="fas fa-user"></i></a>
+      <li class="user-details">
+      <a >
+      <i class="fas fa-user"></i>
+      <div class="login-logout-popup">
+      <p class="account-info">Log in as, name</p>
+      <button class="btn" id="user-btn">Log out</button>
+      </div>
+      </a>
     </li>
     </ul>
   </nav>

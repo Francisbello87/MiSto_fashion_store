@@ -49,13 +49,15 @@ input[type="email"] {
   border: none;
   outline: none;
   margin: 10px 0 20px;
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
   color: #383838;
   font-size: 14px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
   font-family: "Inter", sans-serif;
 }
-
+input[type="email"] {
+  text-transform: none;
+}
 ::placeholder {
   text-align: left;
   color: #383838;

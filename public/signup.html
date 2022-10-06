@@ -25,27 +25,19 @@
     <main>
       <img src="images/loader.gif" alt="" class="loader" />
       <div class="container">
-        <div class="logo-text-signup">
-          <h3>MiSto</h3>
-        </div>
         <div class="alert-box">
           <img src="images/error.png" alt="" class="alert-img" />
           <p class="alert-msg">Error message</p>
         </div>
         <div>
-          <label for="fname">First Name:</label>
+          <label for="fname">Name:</label>
+          <input type="text" autocomplete="off" id="fname" placeholder="name" />
+          <label for="username">Username:</label>
           <input
             type="text"
             autocomplete="off"
-            id="fname"
-            placeholder="first name"
-          />
-          <label for="lname">Last Name:</label>
-          <input
-            type="text"
-            autocomplete="off"
-            id="lname"
-            placeholder="last name"
+            id="username"
+            placeholder="username"
           />
           <label for="email"> Enter E-mail:</label>
           <input
@@ -81,7 +73,7 @@
         </div>
         <p class="link">
           already have an account?
-          <a href="/login"> Sign in here</a>
+          <a href="/login"> Log in here</a>
         </p>
       </div>
     </main>
@@ -89,5 +81,6 @@
     <script src="js/nav.js"></script>
     <script src="js/home.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/token.js"></script>
   </body>
 </html>
