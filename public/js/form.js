@@ -1,7 +1,7 @@
 const loader = document.querySelector(".loader");
 const submitBtn = document.querySelector(".submit-btn");
 const fname = document.querySelector("#fname") || null;
-const username = document.querySelector("#username") || null;
+// const username = document.querySelector("#username") || null;
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirm-password") || null;
@@ -24,8 +24,6 @@ submitBtn.addEventListener("click", () => {
   if (fname != null) {
     if (fname.value === "") {
       showAlert("Name can't be empty");
-    } else if (username.value.length < 3) {
-      showAlert("username must be 3 characters long");
     } else if (!isValidEmail(emailValue)) {
       showAlert("Provide a valid email address");
     } else if (password.value.length < 8) {
@@ -38,7 +36,6 @@ submitBtn.addEventListener("click", () => {
       loader.style.display = "block";
       sendData("/signup", {
         fname: fname.value,
-        username: username.value,
         email: email.value,
         password: password.value,
         confirmPassword: confirmPassword.value,

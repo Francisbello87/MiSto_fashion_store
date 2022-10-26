@@ -112,7 +112,6 @@
   cursor: pointer;
 }
 .big-image .big-product-img {
-  background-image: url("../images/product-big-image.png");
   height: 35.3125rem;
   width: 35.3125rem;
   background-size: cover;

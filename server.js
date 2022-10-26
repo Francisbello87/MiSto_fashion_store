@@ -3,11 +3,19 @@ const admin = require("firebase-admin");
 const bcrypt = require("bcrypt");
 const path = require("path");
 const { dirname } = require("path");
+const aws = require("aws-sdk");
+const region = "US East (N. Virginia) us-east-1";
+const bucketName = "misto-store";
+const accessKeyId = process.env.AWS_ACCESS_KEY;
+const awsSecretAccessKey = process.env.AWS_SECRET_ACCESS_KEY;
+require("dotenv").config();
 
 let staticPath = path.join(__dirname, "public");
 const app = express();
 
-let serviceAccount = require("./misto-webapp-firebase-adminsdk-o93mx-68e56efd12.json");
+// console.log(process.env);
+
+let serviceAccount = process.env.API_KEY;
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -33,8 +41,6 @@ app.post("/signup", (req, res) => {
 
   if (fname.length < 3) {
     return res.json({ alert: "name must be at least 3 characters long" });
-  } else if (username.length < 3) {
-    return res.json({ alert: "username must be 3 characters long" });
   } else if (!email.length) {
     return res.json({ alert: "Provide a valid email address" });
   } else if (password.length < 8) {
@@ -60,7 +66,6 @@ app.post("/signup", (req, res) => {
               .then((data) => {
                 res.json({
                   fname: req.body.fname,
-                  username: req.body.username,
                   email: req.body.email,
                 });
               });
@@ -99,6 +104,14 @@ app.post("/login", (req, res) => {
         });
       }
     });
+});
+
+app.get("/add-product", (req, res) => {
+  res.sendFile(path.join(staticPath, "productAdd.html"));
+});
+
+app.get("/products", (req, res) => {
+  res.sendFile(path.join(staticPath, "product.html"));
 });
 
 app.get("/404", (req, res) => {

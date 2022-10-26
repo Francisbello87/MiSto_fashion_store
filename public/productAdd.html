@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiSto : Product Add</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="stylesheet" href="css/productAdd.css" />
+  </head>
+  <body>
+    <nav class="header navbar"></nav>
+    <main>
+      <img src="images/loader.gif" alt="" class="loader" />
+
+      <div class="alert-box">
+        <img src="images/error.png" alt="" class="alert-img" />
+        <p class="alert-msg">Error message</p>
+      </div>
+
+      <div class="form">
+        <input
+          type="text"
+          id="product-name"
+          placeholder="product name"
+          class="input-product"
+        />
+        <input
+          type="text"
+          id="short-desc"
+          placeholder="Short description about the product"
+          class="input-product"
+        />
+        <textarea id="desc" placeholder="Product description"></textarea>
+
+        <div class="product-info">
+          <div class="product-image">
+            <p class="text">product image</p>
+          </div>
+          <div class="upload-images">
+            <p class="text camera">
+              <i class="fas fa-camera"></i> Upload image
+            </p>
+            <div class="upload-catalogues">
+              <input
+                type="file"
+                name=""
+                id="first-file-upload-btn"
+                class="fileupload"
+                hidden
+              />
+              <label for="first-file-upload-btn" class="upload-image"></label>
+              <input
+                type="file"
+                name=""
+                id="second-file-upload-btn"
+                class="fileupload"
+                hidden
+              />
+              <label for="second-file-upload-btn" class="upload-image"></label>
+              <input
+                type="file"
+                name=""
+                id="third-file-upload-btn"
+                class="fileupload"
+                hidden
+              />
+              <label for="third-file-upload-btn" class="upload-image"></label>
+              <input
+                type="file"
+                name=""
+                id="fourth-file-upload-btn"
+                class="fileupload"
+                hidden
+              />
+              <label for="fourth-file-upload-btn" class="upload-image"></label>
+            </div>
+          </div>
+          <div class="select-sizes">
+            <p class="text">available sizes</p>
+            <div class="sizes">
+              <!-- <label for="s-size" class="size-checkbox">S</label> -->
+              <input type="checkbox" value="xs" id="xs" class="size-checkbox" />
+              <input type="checkbox" value="s" id="s" class="size-checkbox" />
+              <input type="checkbox" value="m" id="m" class="size-checkbox" />
+              <input type="checkbox" value="l" id="l" class="size-checkbox" />
+              <input type="checkbox" value="xl" id="xl" class="size-checkbox" />
+              <input
+                type="checkbox"
+                value="xxl"
+                id="xxl"
+                class="size-checkbox"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-price">
+          <input type="number" id="actual-price" placeholder="actual price" />
+          <input
+            type="number"
+            id="discount"
+            placeholder="discount percentage"
+          />
+          <input type="number" id="sell-price" placeholder="selling price" />
+        </div>
+        <input
+          type="number"
+          name=""
+          id="stock"
+          min="20"
+          placeholder="item in stock (minimum 20)"
+        />
+        <textarea
+          id="tags"
+          placeholder="Enter Categories here, example includes - Men, women, accessories, denim, sports gear, (add men or women at the beginning)."
+        ></textarea>
+
+        <div class="buttons">
+          <button class="btn" id="add-btn">add product</button>
+          <button class="btn" id="save-btn">save draft</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/token.js"></script>
+    <script src="js/productAdd.js"></script>
+  </body>
+</html>

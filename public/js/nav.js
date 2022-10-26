@@ -95,19 +95,19 @@ const createNav = () => {
         <a href=""><i class="fas fa-search desktop-search"></i></a>
       </li>
     
-      <li class="cart">
-        <a href=""><i class="fas fa-shopping-bag"></i></a>
-        <p class="cart-count">0</p>
-      </li>
       <li class="user-details">
       <a >
       <i class="fas fa-user"></i>
-      <div class="login-logout-popup">
-      <p class="account-info">Log in as, name</p>
+      <div class="login-logout-popup hide">
+      <p class="account-info">Log in as, <span class="account-name">name</span></p>
       <button class="btn" id="user-btn">Log out</button>
       </div>
       </a>
     </li>
+    <li class="cart">
+    <a href=""><i class="fas fa-shopping-bag"></i></a>
+    <p class="cart-count">0</p>
+  </li>
     </ul>
   </nav>
   <div class="mobile-nav tab-view">
@@ -150,3 +150,30 @@ const createNav = () => {
 };
 
 createNav();
+
+const userImageBtn = document.querySelector(".fa-user");
+const userPopUp = document.querySelector(".login-logout-popup");
+const popupText = document.querySelector(".account-info");
+const actionBtn = document.querySelector("#user-btn");
+
+userImageBtn.addEventListener("click", () => {
+  userPopUp.classList.toggle("hide");
+});
+
+window.onload = () => {
+  let user = JSON.parse(sessionStorage.user || null);
+  if (user != null) {
+    popupText.innerHTML = `Logged in as, <br> ${user.fname}`;
+    actionBtn.innerHTML = "Log out";
+    actionBtn.addEventListener("click", () => {
+      sessionStorage.clear();
+      location.reload();
+    });
+  } else {
+    popupText.innerHTML = "Log in to place order";
+    actionBtn.innerHTML = "Log in";
+    actionBtn.addEventListener("click", () => {
+      location.href = "/login";
+    });
+  }
+};

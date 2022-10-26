@@ -71,6 +71,10 @@ sizeBtns.forEach((item, i) => {
       sizeNotations.textContent = "Medium";
     } else if (checkedBtn === 3) {
       sizeNotations.textContent = "Large";
+    } else if (checkedBtn === 4) {
+      sizeNotations.textContent = "Extra Large";
+    } else if (checkedBtn === 5) {
+      sizeNotations.textContent = "Extra Extra Large";
     } else {
       sizeNotations.textContent = "Extra Small";
     }
@@ -82,3 +86,9 @@ sizeBtns.forEach((item, i) => {
     sizePick();
   });
 });
+
+let productId = null;
+if (location.pathname != "/products") {
+  productId = decodeURI(location.pathname.split("/").pop());
+  console.log(productId);
+}
