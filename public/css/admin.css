@@ -1,0 +1,31 @@
+@import "signup.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-1: #121212;
+  --color-2: #ffffff;
+  --color-3: #f8f8f8;
+  --icon-hover: #f0cc84;
+  --background-color: #fefefe;
+  --navbar-font-size: 16px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+  padding: 0 5vw;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+.hide {
+  display: none;
+}

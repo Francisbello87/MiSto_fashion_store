@@ -106,6 +106,32 @@ app.post("/login", (req, res) => {
     });
 });
 
+app.get("/admin", (req, res) => {
+  res.sendFile(path.join(staticPath, "admin.html"));
+});
+
+app.post("/admin", (req, res) => {
+  let { email } = req.body;
+  console.log(res);
+  if (!email.length) {
+    return res.json({ alert: "Enter valid email" });
+  } else {
+    db.collection("admins")
+      .doc(email)
+      .set(req.body)
+      .then((data) => {
+        db.collection("users")
+          .doc(email)
+          .update({
+            admin: true,
+          })
+          .then((data) => {
+            res.json(true);
+          });
+      });
+  }
+});
+
 app.get("/add-product", (req, res) => {
   res.sendFile(path.join(staticPath, "productAdd.html"));
 });

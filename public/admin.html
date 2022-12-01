@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+  <body>
+    <nav class="header navbar"></nav>
+    <main>
+        <img src="images/loader.gif" alt="" class="loader" />
+      <div class="container">
+        <div class="alert-box">
+          <img src="images/error.png" alt="" class="alert-img" />
+          <p class="alert-msg">Error message</p>
+        </div>
+        <div class=" create-admin-form hide">
+            <div class="admin-form">
+                <label for="email"> Enter E-mail:</label>
+                <input
+                  type="email"
+                  autocomplete="off"
+                  id="email"
+                  placeholder="email"
+                />
+            </div>
+            <button class="submit-btn">Make Admin</button>
+        </div>
+        <button class="submit-btn" id="create-admin">Create Admin</button>
+       
+    </main>
+
+
+
+    <script src="js/token.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
