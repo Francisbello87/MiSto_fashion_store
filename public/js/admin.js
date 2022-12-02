@@ -25,6 +25,7 @@ createAdmin.addEventListener("click", () => {
   //   console.log("I worked");
 });
 const processData = (data) => {
+  // console.log(data);
   loader.style.display = null;
   if (data.alert) {
     showAlert(data.alert);
@@ -32,6 +33,11 @@ const processData = (data) => {
     data.authToken = generateToken(data.email);
     sessionStorage.user = JSON.stringify(data);
     location.replace("/");
+  } else if (data == true) {
+    let user = JSON.parse(sessionStorage.user);
+    user.admin = true;
+    sessionStorage.user = JSON.stringify(user);
+    location.reload();
   }
 };
 const isValidEmail = (email) => {
